@@ -60,6 +60,16 @@ angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniC
       }
   })
 
+  .state('app.evento', {
+      url: '/singoloevento/:evento',
+      views: {
+        '@': {
+          templateUrl: 'views/eventi/neiDintorni/neiDintorni.html',
+          controller: 'NeiDintorniCtrl'
+        }
+      }
+  })
+
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/eventi/neidintorni');

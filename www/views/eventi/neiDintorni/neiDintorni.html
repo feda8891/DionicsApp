@@ -1,16 +1,17 @@
-<ion-modal-view>
+<ion-view>
 	<ion-content>
 		<ion-list>
-		  <ion-item ng-repeat="evento in eventi" class="item item-thumbnail-left">
-		    <div class="row">
+		  <ion-item ng-repeat="evento in eventi" class="item item-thumbnail-left" ui-sref="app.evento({azienda: azienda.id})">
 
-			    <img src="cover.jpg">
-			    <h2>Pretty Hate Machine</h2>
+			    <img src="../../img/ionic.png"></img>
+			    <h2>{{evento.nome}}</h2>
+			    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
 			    <p>Nine Inch Nails</p>
-			    <p>Nine Inch Nails</p>
+			    <span class="item-note">
+      				Grammy
+    			</span>
 
-			</div>
 		  </ion-item>
 		</ion-list>
 	</ion-content>
-</ion-modal-view>
+</ion-view>
