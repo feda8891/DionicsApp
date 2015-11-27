@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniController', 'dionics.eventoController'])
+angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniController', 'dionics.eventoController', 'dionics.neiDintorniPersonaController','dionics.personaController'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -66,6 +66,36 @@ angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniC
         'menuContent': {
           templateUrl: 'views/eventi/evento/evento.html',
           controller: 'EventoCtrl'
+        }
+      }
+  })
+
+  .state('app.persone', {
+      url: '/persone',
+      abstract: true,
+      views: {
+        'menuContent': {
+          templateUrl: 'views/persone/tabMenu/tabMenuPersona.html'
+        }
+      }
+  })
+
+  .state('app.persone.neidintorni', {
+      url: '/neidintorni',
+      views: {
+        'neidintorniPersona': {
+          templateUrl: 'views/persone/neiDintorni/neiDintorni.html',
+          controller: 'NeiDintorniPersonaCtrl'
+        }
+      }
+  })
+
+  .state('app.persona', {
+      url: '/singolapersona/:persona',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/persone/persona/persona.html',
+          controller: 'PersonaCtrl'
         }
       }
   })
