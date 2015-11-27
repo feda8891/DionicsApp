@@ -2,7 +2,53 @@
 
 angular.module('dionics.dataService',[])
 .factory('dataService', function() {
-	var persone = {};
+	var persone = {
+		1: {
+			id:'1',
+			nome:'Giovanni',
+			cognome:'Ranallo',
+			classifica:{
+				posizione : '1', punteggio : '820'},
+			genere:'Maschio',
+			eta:'',
+			idfacebook:'',
+			interessi:[
+				{nome:'Golf', 
+				img: ''}
+			],
+			eventi:[{
+				id: '2',
+				nome: 'Cena fra amici',
+				img: '',
+				luogo: {
+					via: 'Via Romagnosi 18/a',
+					citta: 'Roma'}
+				}]
+		},
+		2: {
+			id:'2',
+			nome:'Francesco',
+			cognome:'Boccassi',
+			classifica:{
+				posizione : '2', punteggio : '630'},
+			genere:'Maschio',
+			eta:'',
+			idfacebook:'',
+			interessi:[
+				{nome:'Sport', 
+				img: ''}
+			],
+			eventi:[{
+				id: '2',
+				nome: 'Aperitivo Deloitte Digital',
+				img: '',
+				luogo: {
+					via: 'Via Romagnosi 18/a',
+					citta: 'Roma'}
+				}]
+		}
+	};
+	
 	var eventi = {
 		1: {
 			id: '1',
@@ -16,20 +62,20 @@ angular.module('dionics.dataService',[])
 				inizio: '28/11/2015 21:00',
 				fine: '28/11/2015 23:00'
 			},
-			partecipanti:{
-				1: {
+			partecipanti:[
+				{
 					id: '1',
 					nome: 'Francesco',
 					cognome: 'Boccassi',
 					img: ''
 				},
-				2: {
+				{
 					id: '2',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
 					img: ''
 				}
-			}
+			]
 		},
 		2: {
 			id: '2',
@@ -43,12 +89,20 @@ angular.module('dionics.dataService',[])
 				inizio: '28/11/2015 20:00',
 				fine: '28/11/2015 23:00'
 			},
-			partecipanti:{
-				id: '1',
-				nome: 'Giovanni',
-				cognome: 'Ranallo',
-				img: ''
-			}
+			partecipanti:[
+				{
+					id: '1',
+					nome: 'Giovanni',
+					cognome: 'Ranallo',
+					img: ''
+				},
+				{
+					id: '2',
+					nome: 'Riccardo',
+					cognome: 'Gambella',
+					img: ''
+				}
+			]				
 		}
 	};
 
@@ -58,6 +112,12 @@ angular.module('dionics.dataService',[])
 		},
 		getEvento: function(key){
 			return eventi[key];
+		},
+		getPersone: function(){
+			return persone;
+		},
+		getPersona: function(key){
+			return persone[key];
 		}
 	};
 
