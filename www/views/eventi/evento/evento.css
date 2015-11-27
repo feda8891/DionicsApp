@@ -1,0 +1,16 @@
+.background-card{
+	background-image: url('../../../img/evento/background.jpg');
+	height: 33vh;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+}
+
+.tabs-card {
+	padding-top: 30px;
+	padding-left: 0;
+}
+
+.slidebox-full{
+	height: 55vh;
+}
