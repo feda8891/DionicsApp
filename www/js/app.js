@@ -4,9 +4,10 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniController', 'dionics.eventoController', 'dionics.neiDintorniPersonaController','dionics.classificaPersoneController','dionics.personaController', 'dionics.neiDintorniLuogoController', 'uiGmapgoogle-maps', 'countTo'])
+angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniController', 'dionics.eventoController', 'dionics.neiDintorniPersonaController','dionics.classificaPersoneController','dionics.personaController', 'dionics.neiDintorniLuogoController', 'uiGmapgoogle-maps', 'countTo', 'ngCordova'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $cordovaSplashscreen) {
+
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

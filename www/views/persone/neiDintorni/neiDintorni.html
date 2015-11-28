@@ -1,6 +1,6 @@
 <ion-view>
 	<ion-content>
-		<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+		<ui-gmap-google-map class='altezza' center='map.center' zoom='map.zoom'>
 			<ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()" ng-repeat="marker in markers">
 				<ui-gmap-window isIconVisibleOnClick="true">
                 	<a ui-sref="app.persona({persona: marker.id})">{{marker.options.labelContent}}</a>
