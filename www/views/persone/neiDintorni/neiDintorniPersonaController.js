@@ -25,7 +25,7 @@ angular.module('dionics.neiDintorniPersonaController', ['ionic'])
         	options: {
         		labelContent: persona.nome + ' ' + persona.cognome
         	},
-        	icon: persona.icon
+        	icon: persona.icon,
 		};
 
 	});
