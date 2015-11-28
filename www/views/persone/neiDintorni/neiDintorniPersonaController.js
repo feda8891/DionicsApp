@@ -10,7 +10,7 @@ angular.module('dionics.neiDintorniPersonaController', ['ionic'])
 		center: { 
 			latitude: 41.912458, longitude: 12.473889 
 		}, 
-		zoom: 18, 
+		zoom: 16, 
 		pan: 1 
 	};
 

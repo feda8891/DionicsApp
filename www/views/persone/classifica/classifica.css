@@ -1,0 +1,32 @@
+a.item-content {
+	padding-right: 5px !important;
+	padding-left: 85px !important;
+}
+
+a.item-content img{
+
+	max-height: 60px !important;
+	max-width: 60px !important;
+}
+
+.orario {
+	font-size: 10px !important;
+}
+
+
+.punti{
+	position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 20px;
+    font-size: 60px;
+    color: #7ed200;
+    font-weight: bold;
+}
+
+
+.borderForPartecipanti{
+    padding-right: 35px;
+    margin-top: 10px; 
+}

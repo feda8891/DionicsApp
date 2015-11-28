@@ -9,7 +9,7 @@ angular.module('dionics.dataService',[])
 			cognome:'Ranallo',
 			classifica:{
 				posizione : '1', punteggio : '820'},
-			genere:'Maschio',
+			genere:'Uomo',
 			eta:'',
 			idfacebook:'',
 			interessi:[
@@ -36,7 +36,7 @@ angular.module('dionics.dataService',[])
 			cognome:'Boccassi',
 			classifica:{
 				posizione : '2', punteggio : '630'},
-			genere:'Maschio',
+			genere:'Uomo',
 			eta:'',
 			idfacebook:'',
 			interessi:[
