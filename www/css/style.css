@@ -20,4 +20,18 @@
 	position: b
 }
 
+/*Sovrascrittura css*/
+.icon{
+	color: #97CA49;
+    border: 0 solid #ddd;
+}
+
+.tabs-striped.tabs-color-positive .tab-item.tab-item-active, .tabs-striped.tabs-color-positive .tab-item.active, .tabs-striped.tabs-color-positive .tab-item.activated {
+    margin-top: -2px;
+    color: #97CA49;
+    border: 0 solid #97CA49;
+    border-top-width: 2px;
+}
+
+
 h1, h2, h3, h4 { font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
