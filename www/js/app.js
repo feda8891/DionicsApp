@@ -111,6 +111,27 @@ angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniC
       }
   })
 
+  .state('app.luoghi', {
+      url: '/luoghi',
+      abstract: true,
+      views: {
+        'menuContent': {
+          templateUrl: 'views/luoghi/tabMenu/tabMenuLuogo.html'
+        }
+      }
+  })
+
+  .state('app.luoghi.neidintorni', {
+      url: '/neidintorni',
+      views: {
+        'neidintorniLuoghi': {
+          templateUrl: 'views/luoghi/neiDintorni/neiDintorni.html',
+          controller: 'NeiDintorniLuogoCtrl'
+        }
+      }
+  })
+
+
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/eventi/neidintorni');
