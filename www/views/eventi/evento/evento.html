@@ -15,8 +15,8 @@
       			</div>
 
       			<div class="row" style="height:20%; margin-top:0">
-      				<button class="button button-small button-balanced button-partecipa">
-					  button-balanced
+      				<button class="button button-small button-positive button-partecipa">
+					  <b>Partecipo</b>
 					</button>
       			</div>
 
@@ -68,7 +68,18 @@
 	        </div>
 	      </ion-slide>
 	      <ion-slide class="slidebox-full">
-	        <div class="box slidebox-full"><h1>PINK</h1></div>
+	        <div class="box slidebox-full">
+	        <ion-list>
+	        	<ion-item ng-repeat="partecipante in evento.partecipanti" ui-sref"app.persona({partecipante.id})">
+	        		<a class="item item-avatar">
+				      <img src="{{partecipante.img}}">
+				      <h2>{{partecipante.nome}} {{partecipante.cognome}}</h2>
+				    </a>
+
+	        	</ion-item>
+	        </ion-list>
+
+	        </div>
 	      </ion-slide>
 	    </ion-slide-box>
 	</ion-content>
