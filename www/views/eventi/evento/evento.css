@@ -62,3 +62,9 @@
 	max-width: 90% !important;
 	max-height: 90% !important;
 }
+
+.altezza-lista a{
+
+	height: 80px !important;
+
+}
