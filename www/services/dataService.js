@@ -25,7 +25,7 @@ angular.module('dionics.dataService',[])
 			eventi:[{
 				id: '2',
 				nome: 'Cena fra amici',
-				img: '',
+				img: 'img/evento/dinner400.jpg',
 				luogo: {
 					via: 'Via Romagnosi 18/a',
 					citta: 'Roma'},
@@ -71,7 +71,7 @@ angular.module('dionics.dataService',[])
 			eventi:[{
 				id: '2',
 				nome: 'Aperitivo Deloitte Digital',
-				img: '',
+				img: 'img/evento/beer400.jpg',
 				luogo: {
 					via: 'Via Romagnosi 18/a',
 					citta: 'Roma'},

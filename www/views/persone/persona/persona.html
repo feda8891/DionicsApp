@@ -3,7 +3,7 @@
 		<ion-list>
       		<ion-item class="background-card">
       			<div class="row" style="height:20%">
-      				<spam class='title-persona avatar'>{{persona.nome + ' ' + persona.cognome}}</spam>
+      				<spam class='title-evento avatar'>{{persona.nome + ' ' + persona.cognome}}</spam>
       			</div>
 
       			<div class="row item-aligner" style="height:60%">
@@ -29,11 +29,6 @@
 	    <ion-slide-box on-slide-changed="slideHasChanged($index)">
 	      <ion-slide class="slidebox-full">
 	        <div class="box slidebox-full">
-	        	<div class="item item-icon-left no-border">
-				    <i class="icon ion-person"></i>
-				    {{persona.nome + ' ' + persona.cognome}}
-					
-			  	</div>
 			  	<div class="item item-icon-left no-border">
 				    <i class="icon ion-gear-b"></i>
 				    {{persona.serviceLine}}
@@ -50,24 +45,24 @@
 
 	      <ion-slide class="slidebox-full">
 	        <div class="box slidebox-full">
-				<ion-item ng-repeat="evento in persone.eventi" class="item item-thumbnail-left" ui-sref="app.evento({evento: evento.id})">
+				<ion-list>
+					<ion-item ng-repeat="evento in persona.eventi" class="item item-thumbnail-left" ui-sref="app.evento({evento: evento.id})">
 
-				    <img src="img/ionic.png"></img>
-				    <h2>{{evento.nome}}</h2>
-				    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
-				    <p class= "orario">{{evento.quando.inizio}} - {{evento.quando.fine}}</p>
-				    
-				    <span class= "numero-partecipanti">
-	      				{{evento.partecipanti.length}}
-	    			</span>
-				    <span class="item-note">
-	      				Partecipanti
-	    			</span>
+					    <img class="image-avatar" src="{{evento.img}}"></img>
+					    <h2>{{evento.nome}}</h2>
+					    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
+					    <p class= "orario">{{evento.quando.inizio}} - {{evento.quando.fine}}</p>
+					    
+					    <span class= "numero-partecipanti">
+		      				{{evento.partecipanti.length}}
+		    			</span>
+					    <span class="item-note ">
+		      				Partecipanti
+		    			</span>
 
 
-    			
-
-		 	 </ion-item>
+					</ion-item>
+				</ion-list>
 
 	        </div>
 	      </ion-slide>
