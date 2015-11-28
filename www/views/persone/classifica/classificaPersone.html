@@ -3,11 +3,14 @@
 		<ion-list>
 		  <ion-item ng-repeat="persona in persone" class="item item-thumbnail-left" ui-sref="app.persona({persona: persona.id})">
 
-			    <img src="../../img/ionic.png"></img>
-			    <h2>{{persona.nome}}</h2>
-			    <p>{{persona.cognome}}</p>
+			    <img src="img/ionic.png"></img>
+			    <h2>{{persona.nome + ' ' + persona.cognome}}</h2>
+			    <p>{{persona.genere}}</p>
+			    <span class= "punti">
+      				{{persona.classifica.posizione}}
+    			</span>
 			    <span class="item-note">
-      				Grammy
+      				Punti
     			</span>
 
 		  </ion-item>
