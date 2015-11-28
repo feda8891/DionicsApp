@@ -17,4 +17,6 @@ angular.module('dionics.eventoController', ['ionic'])
 
 	$scope.evento = dataService.getEvento($stateParams.evento);
 
+	$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
 })

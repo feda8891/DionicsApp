@@ -30,9 +30,14 @@
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
-	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
+	
 }
 
 .button-partecipa {
 	margin-left: auto;
+}
+
+
+.angular-google-map-container { 
+  height: 50vh; 
 }
