@@ -79,7 +79,7 @@ angular.module('dionics.dataService',[])
 					id: '1',
 					nome: 'Francesco',
 					cognome: 'Boccassi',
-					img: ''
+					img: 'img/persona/francesco.jpg'
 				},
 				{
 					id: '2',
