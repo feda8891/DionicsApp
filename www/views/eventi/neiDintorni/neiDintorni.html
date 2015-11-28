@@ -8,8 +8,8 @@
 			    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
 			    <p class= "orario">{{evento.quando.inizio}} - {{evento.quando.fine}}</p>
 			    
-			    <span class= "numero-partecipanti">
-      				{{evento.partecipanti.length}}
+			    <span count-to="{{evento.partecipanti.length}}" value="0" duration="0.6" class= "numero-partecipanti">
+      				
     			</span>
 			    <span class="item-note ">
       				Partecipanti

@@ -15,8 +15,12 @@
       			</div>
 
       			<div class="row" style="height:20%; margin-top:0">
-      				<button class="button button-small button-positive button-partecipa">
+      				<button class="button button-small button-positive button-partecipa" ng-show="partecipo==0" ng-click="partecipo=1">
 					  <b>Partecipo</b>
+					</button>
+
+					<button class="button button-small non-partecipo button-partecipa" ng-show="partecipo==1" ng-click="partecipo=0">
+					  <b>Non partecipo più</b>
 					</button>
       			</div>
 
@@ -24,13 +28,13 @@
 	      	<ion-item class="tabs-card">
 		        <ion-tabs class="tabs-striped tabs-color-positive tabs-icon-only">
 
-		          <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" on-select="onTabSelected()">
+		          <ion-tab title="Home" icon-on="ion-ios-information" icon-off="ion-ios-information-outline" on-select="onTabSelected()">
 		          </ion-tab>
 
 		          <ion-tab title="Mappa" icon-on="ion-map" icon-off="ion-ios-location-outline" on-select="onTabSelected()">
 		          </ion-tab>
 
-		          <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" on-select="onTabSelected()">
+		          <ion-tab title="Partecipanti" icon-on="ion-ios-people" icon-off="ion-ios-people-outline" on-select="onTabSelected()">
 		          </ion-tab>
 
 		        </ion-tabs>
@@ -71,7 +75,7 @@
 	        <div class="box slidebox-full">
 	        <ion-list>
 	        	<ion-item ng-repeat="partecipante in evento.partecipanti" href="#/app/singolapersona/{{partecipante.id}}" class="item item-avatar altezza-lista">
-	        	
+
 				      <img class="immagine-partecipante" src="{{partecipante.img}}">
 				      <h2>{{partecipante.nome}} {{partecipante.cognome}}</h2>
 				      <p>{{partecipante.stato}}</p>
