@@ -1,21 +1,39 @@
 <ion-view>
 	<ion-content>
 		<ion-list>
-      		<ion-item class="background-card"></ion-item>
-	      <ion-item class="tabs-card">
-	        <ion-tabs class="tabs-striped tabs-color-positive tabs-icon-only">
+      		<ion-item class="background-card">
+      			<div class="row item-aligner" style="height:20%">
+      				<spam class='title-evento'>{{evento.nome}}</spam>
+      			</div>
 
-	          <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" on-select="onTabSelected()">
-	          </ion-tab>
+      			<div class="row item-aligner" style="height:60%">
 
-	          <ion-tab title="About" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" on-select="onTabSelected()">
-	          </ion-tab>
+      				
+				    <img class="image-avatar" src="../../../img/persona/francesco.jpg">
+				    
+      			</div>
 
-	          <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" on-select="onTabSelected()">
-	          </ion-tab>
+      			<div class="row" style="height:20%; margin-top:0">
+      				<button class="button button-small button-balanced button-partecipa">
+					  button-balanced
+					</button>
+      			</div>
 
-	        </ion-tabs>
-	      </ion-item>
+      		</ion-item>
+	      	<ion-item class="tabs-card">
+		        <ion-tabs class="tabs-striped tabs-color-positive tabs-icon-only">
+
+		          <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" on-select="onTabSelected()">
+		          </ion-tab>
+
+		          <ion-tab title="About" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" on-select="onTabSelected()">
+		          </ion-tab>
+
+		          <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" on-select="onTabSelected()">
+		          </ion-tab>
+
+		        </ion-tabs>
+	      	</ion-item>
       </ion-list>		
      
 	    <ion-slide-box on-slide-changed="slideHasChanged($index)">

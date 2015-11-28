@@ -4,6 +4,10 @@
  	background-repeat: no-repeat;
  	background-size: cover;
  	background-position: center;
+ 	padding-top: 0;
+ 	padding-bottom: 0;
+ 	padding-right: 0;
+ 	padding-left: 0;
 }
 
 .tabs-card {
@@ -13,4 +17,22 @@
 
 .slidebox-full{
 	height: 55vh;
+}
+
+.image-avatar {
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.title-evento {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
+}
+
+.button-partecipa {
+	margin-left: auto;
 }
