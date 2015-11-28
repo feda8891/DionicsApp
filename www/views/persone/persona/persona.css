@@ -1,0 +1,59 @@
+.background-card{
+	background-image: url('../../../img/evento/background.jpg');
+	height: 33vh;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	padding-top: 0;
+ 	padding-bottom: 0;
+ 	padding-right: 0;
+ 	padding-left: 0;
+}
+
+.tabs-card {
+	padding-top: 30px;
+	padding-left: 0;
+}
+
+.slidebox-full{
+	height: 53vh;
+}
+
+.image-avatar {
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title-persona {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+
+.button-partecipa {
+	margin-left: auto;
+}
+
+.avatar {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.angular-google-map-container { 
+  height: 50vh; 
+}
+
+.no-border{
+	border: 0;
+}
+
+.wrapping-list .item-content, .wrapping-list .item {
+    overflow: initial;
+    white-space: initial;
+}
