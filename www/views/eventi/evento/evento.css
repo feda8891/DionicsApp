@@ -41,3 +41,7 @@
 .angular-google-map-container { 
   height: 50vh; 
 }
+
+.no-border{
+	border: 0;
+}
