@@ -3,7 +3,7 @@
 		<ion-list>
 		  <ion-item ng-repeat="persona in persone" class="item item-thumbnail-left" ui-sref="app.persona({persona: persona.id})">
 
-			    <img src="../../img/ionic.png"></img>
+			    <img class="image-avatar" src="{{persona.icon}}"></img>
 			    <h2>{{persona.nome}}</h2>
 			    <p>{{persona.cognome}}</p>
 			    <span class="item-note">
