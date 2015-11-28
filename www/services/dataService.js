@@ -21,7 +21,7 @@ angular.module('dionics.dataService',[])
 				longitude: 12.473889
 			},
 			icon:'img/persona/giovanni.jpg',
-			serviceLine: 'Digital',
+			serviceLine: 'Digital Transformation',
 			eventi:[{
 				id: '2',
 				nome: 'Cena fra amici',
@@ -67,7 +67,7 @@ angular.module('dionics.dataService',[])
 				longitude: 12.474195
 			},
 			icon:'img/persona/francesco.jpg',
-			serviceLine: 'Digital',
+			serviceLine: 'Digital Transformation',
 			eventi:[{
 				id: '2',
 				nome: 'Aperitivo Deloitte Digital',
@@ -96,23 +96,24 @@ angular.module('dionics.dataService',[])
 			}]
 		},
 		3: {
-			id:'2',
+			id:'3',
 			nome:'Riccardo',
 			cognome:'Gambella',
 			classifica:{
 				posizione : '3', punteggio : '440'},
-			genere:'Maschio',
+			genere:'Uomo',
 			eta:'',
 			idfacebook:'',
-			interessi:[
-				{nome:'Golf', 
-				img: ''}
-			],
+			interesse:{
+				nome:'Jazz', 
+				img: ''
+			},
 			posizioneGeo:{
 				latitude: 42.5658288,
 				longitude: 12.6446638
 			},
 			icon:'img/persona/riccardo.jpg',
+			serviceLine: 'Digital Transformation',
 			eventi:[/*{
 				id: '2',
 				nome: 'Aperitivo Deloitte Digital',
