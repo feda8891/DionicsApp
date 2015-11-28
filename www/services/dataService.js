@@ -142,18 +142,16 @@ angular.module('dionics.dataService',[])
 			},
 			partecipanti:[
 				{
-					id: '2',
+					id: '1',
 					nome: 'Francesco',
 					cognome: 'Boccassi',
-					img: 'img/persona/francesco.jpg',
-					stato: 'Digital Transformation'
+					img: 'img/persona/francesco.jpg'
 				},
 				{
-					id: '3',
+					id: '2',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
-					img: 'img/persona/riccardo.jpg',
-					stato: 'Digital Transformation'
+					img: ''
 				}
 			],
 			descrizione: 'Non mancate!'
@@ -177,18 +175,71 @@ angular.module('dionics.dataService',[])
 					id: '1',
 					nome: 'Giovanni',
 					cognome: 'Ranallo',
-					img: 'img/persona/giovanni.jpg',
-					stato: 'Digital Transformation'
+					img: ''
 				},
 				{
-					id: '3',
+					id: '2',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
-					img: 'img/persona/riccardo.jpg',
-					stato: 'Digital Transformation'
+					img: ''
 				}
 			],
 			descrizione: 'Vi aspetto!'				
+		}
+	};
+
+	var luoghi = {
+		1: {
+			id: '1',
+			nome: 'Colosseo',
+			img: 'img/luogo/colosseo.jpg',
+			posizione: {
+				via: 'Piazza del Colosseo, 1',
+				citta: 'Roma',
+				latitudine: 41.890202,
+				longitudine: 12.492199
+			},
+			visitatori:[
+				{
+					id: '1',
+					nome: 'Giovanni',
+					cognome: 'Ranallo',
+					img: ''
+				},
+				{
+					id: '2',
+					nome: 'Riccardo',
+					cognome: 'Gambella',
+					img: ''
+				}
+			],
+			descrizione: 'Bellissimo!'
+		},
+		2: {
+			id: '2',
+			nome: 'Drunken Ship',
+			img: 'img/luogo/drunken.jpg',
+			posizione: {
+				via: 'Piazza Campo de Fiori, 20',
+				citta: 'Roma',
+				latitudine: 41.895803,
+				longitudine: 12.471583
+			},
+			visitatori:[
+				{
+					id: '1',
+					nome: 'Giovanni',
+					cognome: 'Ranallo',
+					img: ''
+				},
+				{
+					id: '2',
+					nome: 'Riccardo',
+					cognome: 'Gambella',
+					img: ''
+				}
+			],
+			descrizione: 'Epico!'				
 		}
 	};
 
@@ -204,6 +255,12 @@ angular.module('dionics.dataService',[])
 		},
 		getPersona: function(key){
 			return persone[key];
+		},
+		getLuoghi: function(){
+			return luoghi;
+		},
+		getLuogo: function(key){
+			return luoghi[key];
 		}
 	};
 
