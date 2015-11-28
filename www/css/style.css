@@ -33,5 +33,14 @@
     border-top-width: 2px;
 }
 
+.button.button-positive {
+    border-color: #0c60ee;
+    background-color: #387ef5;
+    color: #fff;
+}
+
+.tabs-striped.tabs-color-positive .tab-item {
+    color: #ccc;
+}
 
 h1, h2, h3, h4 { font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
