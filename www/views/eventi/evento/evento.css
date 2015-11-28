@@ -52,3 +52,8 @@
 .no-border{
 	border: 0;
 }
+
+.wrapping-list .item-content, .wrapping-list .item {
+    overflow: initial;
+    white-space: initial;
+}

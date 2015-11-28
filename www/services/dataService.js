@@ -63,7 +63,7 @@ angular.module('dionics.dataService',[])
 		1: {
 			id: '1',
 			nome: 'Aperitivo Deloitte Digital',
-			img: '',
+			img: 'img/evento/beer400.jpg',
 			luogo: {
 				via: 'Via Romagnosi 18/a',
 				citta: 'Roma',
@@ -88,17 +88,17 @@ angular.module('dionics.dataService',[])
 					img: ''
 				}
 			],
-			descrizione: 'Ci vediamo per festeggiare con un aperitivo la chiusura dell\'hachathon'
+			descrizione: 'Non mancate!'
 		},
 		2: {
 			id: '2',
 			nome: 'Cena fra amici',
-			img: '',
+			img: 'img/evento/dinner400.jpg',
 			luogo: {
-				via: 'Via Romagnosi 18/a',
+				via: 'Via delle Cave 88',
 				citta: 'Roma',
-				latitudine: 41.912167,
-				longitudine: 12.473843
+				latitudine: 41.8715924,
+				longitudine: 12.5287508
 			},
 			quando: {
 				inizio: '28/11/2015 20:00',
@@ -118,7 +118,7 @@ angular.module('dionics.dataService',[])
 					img: ''
 				}
 			],
-			descrizione: 'Offro un invito a cena in cambio di buona compagnia'				
+			descrizione: 'Vi aspetto!'				
 		}
 	};
 
