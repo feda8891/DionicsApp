@@ -38,11 +38,32 @@
      
 	    <ion-slide-box on-slide-changed="slideHasChanged($index)">
 	      <ion-slide class="slidebox-full">
-	        <div class="box slidebox-full"><h1>BLUE</h1></div>
+	        <div class="box slidebox-full">
+	        	<div class="item item-icon-left no-border">
+				    <i class="icon ion-music-note"></i>
+				    Start listening
+			  	</div>
+
+			  	<div class="item item-icon-left no-border">
+				    <i class="icon ion-music-note"></i>
+				    Start listening
+			  	</div>
+
+			  	<div class="item item-icon-left no-border">
+				    <i class="icon ion-music-note"></i>
+				    Start listening
+			  	</div>
+
+	        </div>
 	      </ion-slide>
 	      <ion-slide class="slidebox-full">
 	        <div class="box slidebox-full">
-	        	<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+	        	<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+	        		<ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()">
+ 
+          			</ui-gmap-marker> 
+
+	        	</ui-gmap-google-map>
 	        </div>
 	      </ion-slide>
 	      <ion-slide class="slidebox-full">

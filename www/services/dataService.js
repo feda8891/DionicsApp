@@ -56,7 +56,9 @@ angular.module('dionics.dataService',[])
 			img: '',
 			luogo: {
 				via: 'Via Romagnosi 18/a',
-				citta: 'Roma'
+				citta: 'Roma',
+				latitudine: 41.912167,
+				longitudine: 12.473843
 			},
 			quando: {
 				inizio: '28/11/2015 21:00',
@@ -83,7 +85,9 @@ angular.module('dionics.dataService',[])
 			img: '',
 			luogo: {
 				via: 'Via Romagnosi 18/a',
-				citta: 'Roma'
+				citta: 'Roma',
+				latitudine: 41.912167,
+				longitudine: 12.473843
 			},
 			quando: {
 				inizio: '28/11/2015 20:00',

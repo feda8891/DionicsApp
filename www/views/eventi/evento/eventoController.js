@@ -17,6 +17,21 @@ angular.module('dionics.eventoController', ['ionic'])
 
 	$scope.evento = dataService.getEvento($stateParams.evento);
 
-	$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+	$scope.map = { center: { latitude: $scope.evento.luogo.latitudine, longitude: $scope.evento.luogo.longitudine }, zoom: 15 };
+
+	$scope.marker = {
+        id: 0,
+        coords: {
+          latitude: $scope.evento.luogo.latitudine,
+          longitude: $scope.evento.luogo.longitudine
+        }
+      }; 
+       
+	$scope.marker.options = {
+	    draggable: false,
+	    labelContent: "lat: " + $scope.marker.coords.latitude + '<br/> ' + 'lon: ' + $scope.marker.coords.longitude,
+	    labelAnchor: "80 120",
+	    labelClass: "marker-labels"
+	};  
 
 })
