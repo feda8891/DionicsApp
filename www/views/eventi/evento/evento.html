@@ -70,7 +70,8 @@
 	      <ion-slide class="slidebox-full">
 	        <div class="box slidebox-full">
 	        <ion-list>
-	        	<ion-item ng-repeat="partecipante in evento.partecipanti" href="#/app/singolapersona/{{partecipante.id}}" class="item item-avatar">
+	        	<ion-item ng-repeat="partecipante in evento.partecipanti" href="#/app/singolapersona/{{partecipante.id}}" class="item item-avatar altezza-lista">
+	        	
 				      <img class="immagine-partecipante" src="{{partecipante.img}}">
 				      <h2>{{partecipante.nome}} {{partecipante.cognome}}</h2>
 				      <p>{{partecipante.stato}}</p>

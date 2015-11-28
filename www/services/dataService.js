@@ -142,18 +142,18 @@ angular.module('dionics.dataService',[])
 			},
 			partecipanti:[
 				{
-					id: '1',
+					id: '2',
 					nome: 'Francesco',
 					cognome: 'Boccassi',
 					img: 'img/persona/francesco.jpg',
-					stato: 'Deloitte Digital'
+					stato: 'Digital Transformation'
 				},
 				{
-					id: '2',
+					id: '3',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
 					img: 'img/persona/riccardo.jpg',
-					stato: 'Deloitte Digital'
+					stato: 'Digital Transformation'
 				}
 			],
 			descrizione: 'Non mancate!'
@@ -178,14 +178,14 @@ angular.module('dionics.dataService',[])
 					nome: 'Giovanni',
 					cognome: 'Ranallo',
 					img: 'img/persona/giovanni.jpg',
-					stato: 'Deloitte Digital'
+					stato: 'Digital Transformation'
 				},
 				{
-					id: '2',
+					id: '3',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
 					img: 'img/persona/riccardo.jpg',
-					stato: 'Deloitte Digital'
+					stato: 'Digital Transformation'
 				}
 			],
 			descrizione: 'Vi aspetto!'				
