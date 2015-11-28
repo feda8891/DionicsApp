@@ -3,7 +3,7 @@
 		<ion-list>
 		  <ion-item ng-repeat="evento in eventi" class="item item-thumbnail-left" ui-sref="app.evento({evento: evento.id})">
 
-			    <img src="../../img/ionic.png"></img>
+			    <img src="img/ionic.png"></img>
 			    <h2>{{evento.nome}}</h2>
 			    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
 			    <p class= "orario">{{evento.quando.inizio}} - {{evento.quando.fine}}</p>

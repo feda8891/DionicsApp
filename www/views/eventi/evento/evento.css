@@ -24,6 +24,8 @@
 	border-radius: 100px;
 	max-width: 100%;
 	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .title-evento {
@@ -35,6 +37,11 @@
 
 .button-partecipa {
 	margin-left: auto;
+}
+
+.avatar {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
