@@ -32,6 +32,8 @@ angular.module('dionics.eventoController', ['ionic'])
 	    labelContent: "lat: " + $scope.marker.coords.latitude + '<br/> ' + 'lon: ' + $scope.marker.coords.longitude,
 	    labelAnchor: "80 120",
 	    labelClass: "marker-labels"
-	};  
+	};
+
+	$scope.partecipo = 0;
 
 })
