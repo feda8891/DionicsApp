@@ -20,7 +20,7 @@ angular.module('dionics.dataService',[])
 				latitude: 41.912458,
 				longitude: 12.473889
 			},
-			icon:'img/persona/francesco.jpg',
+			icon:'img/persona/giovanni.jpg',
 			eventi:[{
 				id: '2',
 				nome: 'Cena fra amici',
@@ -56,6 +56,33 @@ angular.module('dionics.dataService',[])
 					via: 'Via Romagnosi 18/a',
 					citta: 'Roma'}
 			}]
+		},
+		3: {
+			id:'2',
+			nome:'Riccardo',
+			cognome:'Gambella',
+			classifica:{
+				posizione : '3', punteggio : '440'},
+			genere:'Maschio',
+			eta:'',
+			idfacebook:'',
+			interessi:[
+				{nome:'Golf', 
+				img: ''}
+			],
+			posizioneGeo:{
+				latitude: 42.5658288,
+				longitude: 12.6446638
+			},
+			icon:'img/persona/riccardo.jpg',
+			eventi:[/*{
+				id: '2',
+				nome: 'Aperitivo Deloitte Digital',
+				img: '',
+				luogo: {
+					via: 'Via Romagnosi 18/a',
+					citta: 'Roma'}
+			}*/]
 		}
 	};
 	
