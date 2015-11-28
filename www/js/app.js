@@ -90,6 +90,16 @@ angular.module('starter', ['ionic', 'dionics.dataService', 'dionics.neiDintorniC
       }
   })
 
+  .state('app.persone.classifica', {
+      url: '/classifica',
+      views: {
+        'classificaPersone': {
+          templateUrl: 'views/persone/classifica/classificaPersone.html',
+          controller: 'classificaPersoneCtrl'
+        }
+      }
+  })
+
   .state('app.persona', {
       url: '/singolapersona/:persona',
       views: {
