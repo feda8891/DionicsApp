@@ -106,13 +106,15 @@ angular.module('dionics.dataService',[])
 					id: '1',
 					nome: 'Francesco',
 					cognome: 'Boccassi',
-					img: 'img/persona/francesco.jpg'
+					img: 'img/persona/francesco.jpg',
+					stato: 'Deloitte Digital'
 				},
 				{
 					id: '2',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
-					img: ''
+					img: 'img/persona/riccardo.jpg',
+					stato: 'Deloitte Digital'
 				}
 			],
 			descrizione: 'Non mancate!'
@@ -136,13 +138,15 @@ angular.module('dionics.dataService',[])
 					id: '1',
 					nome: 'Giovanni',
 					cognome: 'Ranallo',
-					img: ''
+					img: 'img/persona/giovanni.jpg',
+					stato: 'Deloitte Digital'
 				},
 				{
 					id: '2',
 					nome: 'Riccardo',
 					cognome: 'Gambella',
-					img: ''
+					img: 'img/persona/riccardo.jpg',
+					stato: 'Deloitte Digital'
 				}
 			],
 			descrizione: 'Vi aspetto!'				

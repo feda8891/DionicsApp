@@ -70,15 +70,13 @@
 	      <ion-slide class="slidebox-full">
 	        <div class="box slidebox-full">
 	        <ion-list>
-	        	<ion-item ng-repeat="partecipante in evento.partecipanti" ui-sref"app.persona({partecipante.id})">
-	        		<a class="item item-avatar">
-				      <img src="{{partecipante.img}}">
+	        	<ion-item ng-repeat="partecipante in evento.partecipanti" href="#/app/singolapersona/{{partecipante.id}}" class="item item-avatar">
+				      <img class="immagine-partecipante" src="{{partecipante.img}}">
 				      <h2>{{partecipante.nome}} {{partecipante.cognome}}</h2>
-				    </a>
+				      <p>{{partecipante.stato}}</p>
 
 	        	</ion-item>
 	        </ion-list>
-
 	        </div>
 	      </ion-slide>
 	    </ion-slide-box>
