@@ -16,6 +16,11 @@ angular.module('dionics.dataService',[])
 				{nome:'Golf', 
 				img: ''}
 			],
+			posizioneGeo:{
+				latitude: 41.912458,
+				longitude: 12.473889
+			},
+			icon:'../img/persona/francesco.jpg',
 			eventi:[{
 				id: '2',
 				nome: 'Cena fra amici',
@@ -38,6 +43,11 @@ angular.module('dionics.dataService',[])
 				{nome:'Sport', 
 				img: ''}
 			],
+			posizioneGeo:{
+				latitude: 41.9111507,
+				longitude: 12.474195
+			},
+			icon:'../img/persona/francesco.jpg',
 			eventi:[{
 				id: '2',
 				nome: 'Aperitivo Deloitte Digital',
@@ -45,7 +55,7 @@ angular.module('dionics.dataService',[])
 				luogo: {
 					via: 'Via Romagnosi 18/a',
 					citta: 'Roma'}
-				}]
+			}]
 		}
 	};
 	

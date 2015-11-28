@@ -6,10 +6,17 @@
 			    <img src="../../img/ionic.png"></img>
 			    <h2>{{evento.nome}}</h2>
 			    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
-			    <p>Nine Inch Nails</p>
-			    <span class="item-note">
-      				Grammy
+			    <p class= "orario">{{evento.quando.inizio}} - {{evento.quando.fine}}</p>
+			    
+			    <span class= "numero-partecipanti">
+      				{{evento.partecipanti.length}}
     			</span>
+			    <span class="item-note">
+      				Partecipanti
+    			</span>
+
+
+    			
 
 		  </ion-item>
 		</ion-list>
