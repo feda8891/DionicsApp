@@ -1,16 +1,16 @@
 <ion-view>
 	<ion-content>
 		<ion-list>
-		  <ion-item ng-repeat="luogo in luoghi" class="item item-thumbnail-left" ui-sref="app.luogo({luogo: luogo.id})">
+		  <ion-item ng-repeat="luogo in luoghi" class="item item-thumbnail-left">
 
 			    <img src="{{luogo.img}}"></img>
 			    <h2>{{luogo.nome}}</h2>
-			    <p>{{luogo.posizione.via}}, {{evento.posizione.citta}}</p>
+			    <p>{{luogo.posizione.via}}, {{luogo.posizione.citta}}</p>
 			    
-			    <span class= "numero-partecipanti">
-      				{{luogo.visitatori.length}}
+			    <span count-to="{{luogo.visitatori.length}}" value="0" duration="0.6" class= "numero-partecipanti">
+      				
     			</span>
-			    <span class="item-note ">
+			    <span class="item-note">
       				Visitatori
     			</span>
 
