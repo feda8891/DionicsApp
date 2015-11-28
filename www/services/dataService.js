@@ -87,7 +87,8 @@ angular.module('dionics.dataService',[])
 					cognome: 'Gambella',
 					img: ''
 				}
-			]
+			],
+			descrizione: 'Ci vediamo per festeggiare con un aperitivo la chiusura dell\'hachathon'
 		},
 		2: {
 			id: '2',
@@ -116,7 +117,8 @@ angular.module('dionics.dataService',[])
 					cognome: 'Gambella',
 					img: ''
 				}
-			]				
+			],
+			descrizione: 'Offro un invito a cena in cambio di buona compagnia'				
 		}
 	};
 
