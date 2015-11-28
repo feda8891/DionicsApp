@@ -12,23 +12,42 @@ angular.module('dionics.dataService',[])
 			genere:'Uomo',
 			eta:'',
 			idfacebook:'',
-			interessi:[
-				{nome:'Golf', 
-				img: ''}
-			],
+			interesse:{
+					nome:'Golf', 
+					img: ''
+			},
 			posizioneGeo:{
 				latitude: 41.912458,
 				longitude: 12.473889
 			},
 			icon:'img/persona/francesco.jpg',
+			serviceLine: 'Digital',
 			eventi:[{
 				id: '2',
 				nome: 'Cena fra amici',
 				img: '',
 				luogo: {
 					via: 'Via Romagnosi 18/a',
-					citta: 'Roma'}
-				}]
+					citta: 'Roma'},
+				quando: {
+					inizio: '28/11/2015 21:00',
+					fine: '28/11/2015 23:00'
+				},
+				partecipanti:[
+					{
+						id: '1',
+						nome: 'Francesco',
+						cognome: 'Boccassi',
+						img: ''
+					},
+					{
+						id: '2',
+						nome: 'Riccardo',
+						cognome: 'Gambella',
+						img: ''
+					}
+				],
+			}]
 		},
 		2: {
 			id:'2',
@@ -39,22 +58,41 @@ angular.module('dionics.dataService',[])
 			genere:'Uomo',
 			eta:'',
 			idfacebook:'',
-			interessi:[
-				{nome:'Sport', 
-				img: ''}
-			],
+			interesse:{
+					nome:'Jazz', 
+					img: ''
+			},
 			posizioneGeo:{
 				latitude: 41.9111507,
 				longitude: 12.474195
 			},
 			icon:'img/persona/francesco.jpg',
+			serviceLine: 'Digital',
 			eventi:[{
 				id: '2',
 				nome: 'Aperitivo Deloitte Digital',
 				img: '',
 				luogo: {
 					via: 'Via Romagnosi 18/a',
-					citta: 'Roma'}
+					citta: 'Roma'},
+				quando: {
+					inizio: '28/11/2015 21:00',
+					fine: '28/11/2015 23:00'
+				},
+				partecipanti:[
+					{
+						id: '1',
+						nome: 'Francesco',
+						cognome: 'Boccassi',
+						img: ''
+					},
+					{
+						id: '2',
+						nome: 'Riccardo',
+						cognome: 'Gambella',
+						img: ''
+					}
+				],
 			}]
 		}
 	};

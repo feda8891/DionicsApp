@@ -1,5 +1,76 @@
 <ion-view>
-	<ion-content>
-		{{persona.nome}}
+	<ion-content data-tap-disabled="true">
+		<ion-list>
+      		<ion-item class="background-card">
+      			<div class="row" style="height:20%">
+      				<spam class='title-persona avatar'>{{persona.nome + ' ' + persona.cognome}}</spam>
+      			</div>
+
+      			<div class="row item-aligner" style="height:60%">
+
+			    <img class="image-avatar" src="img/persona/francesco.jpg">
+
+      			</div>
+
+      		</ion-item>
+	      	<ion-item class="tabs-card">
+		        <ion-tabs class="tabs-striped tabs-color-positive tabs-icon-only">
+
+		          <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" on-select="onTabSelected()">
+		          </ion-tab>
+
+		          <ion-tab title="Eventi" icon-on="ion-beer" icon-off="ion-beer" on-select="onTabSelected()">
+		          </ion-tab>
+
+		        </ion-tabs>
+	      	</ion-item>
+      </ion-list>		
+     
+	    <ion-slide-box on-slide-changed="slideHasChanged($index)">
+	      <ion-slide class="slidebox-full">
+	        <div class="box slidebox-full">
+	        	<div class="item item-icon-left no-border">
+				    <i class="icon ion-person"></i>
+				    {{persona.nome + ' ' + persona.cognome}}
+					
+			  	</div>
+			  	<div class="item item-icon-left no-border">
+				    <i class="icon ion-gear-b"></i>
+				    {{persona.serviceLine}}
+			  	</div>
+
+			  	<div class="item item-icon-left no-border">	
+				    <i class="icon ion-happy-outline"></i>
+				    {{persona.interesse.nome}}
+			  	</div>
+
+	        </div>
+	      </ion-slide>
+
+
+	      <ion-slide class="slidebox-full">
+	        <div class="box slidebox-full">
+				<ion-item ng-repeat="evento in persone.eventi" class="item item-thumbnail-left" ui-sref="app.evento({evento: evento.id})">
+					
+				    <img src="img/ionic.png"></img>
+				    <h2>{{evento.nome}}</h2>
+				    <p>{{evento.luogo.via}}, {{evento.luogo.citta}}</p>
+				    <p class= "orario">{{evento.quando.inizio}} - {{evento.quando.fine}}</p>
+				    
+				    <span class= "numero-partecipanti">
+	      				{{evento.partecipanti.length}}
+	    			</span>
+				    <span class="item-note">
+	      				Partecipanti
+	    			</span>
+
+
+    			
+
+		 	 </ion-item>
+
+	        </div>
+	      </ion-slide>
+	    </ion-slide-box>
 	</ion-content>
 </ion-view>
